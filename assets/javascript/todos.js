@@ -7,9 +7,10 @@ $("ul").on("click", "li", function () {
 $("ul").on("click", ".deleteButton", function (event) {
     // Stop the item from becoming greyed out strikethroughed
     event.stopPropagation();
-    var result = confirm("Are you sure you want to delete this TODO?");
-    if (result) {
-        $(this).parent().fadeOut(200, function () {
+    // var result = confirm("Are you sure you want to delete this TODO?");
+    // turning off the popup confirmation
+    if (true) {
+        $(this).parent().fadeOut(300, function () {
             $(this).remove();
         });
     }
@@ -26,6 +27,8 @@ $("input[type = 'text']").on("keypress", function (event) {
     if (event.which === 13) {
         var newTodo = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span class = 'deleteButton'>X </span>" + newTodo + "</li>")
+        $("ul").prepend("<li><span class = 'deleteButton'><i class='fas fa-trash-alt'></i></span>" + newTodo + "</li>")
     };
+
+
 })
