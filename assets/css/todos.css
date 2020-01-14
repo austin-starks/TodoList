@@ -2,9 +2,16 @@
     border: 2px black solid;
     width: 50%;
     margin: 0 auto;
+    /* Disable ability for user to select the text */
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .strikethrough {
     text-decoration:line-through;
     color: 	rgba(100,100,100,0.5);
 }
+
