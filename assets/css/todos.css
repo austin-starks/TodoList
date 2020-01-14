@@ -4,21 +4,6 @@ body {
     background: linear-gradient(to left, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#container {
-    width: 50%;
-    max-width: 600px;
-    margin: 5% auto;
-    /* Disable ability for user to select the text */
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
-   box-shadow: 0 0 3px rgba(0,0,0,0.4);
-   font-family: 'Source Sans Pro', sans-serif;
-
-}
-
 h1 {
     text-align: center;
     font-size: 2rem;
@@ -31,11 +16,6 @@ h1 {
     padding-right: 0;
     margin: 0;
     background-color: rgb(41, 128, 182);
-}
-
-.fa-pencil-alt {
-    float: right;
-    margin-right: 5%;
 }
 
 input[type='text'] {
@@ -54,41 +34,6 @@ input[type='text']:focus{
     outline: none;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-li {
-    background-color: white;
-    height: 40px;
-    line-height: 40px;
-    /* color: rgba(0,0,0,0.85); */
-    padding-left: 2%;
-}
-
-li:nth-child(2n) {
-    background-color: rgb(220,220,220);
-}
-
-.deleteButton {
-    height: 30px;
-    margin-right: 5px;
-    text-align: center;
-    color: rgb(251,36,36);
-    opacity: 0;
-    width: 0;
-    display: inline-block;
-    transition: 0.1s linear;
-}
-
-li:hover .deleteButton {
-    width: 30px;
-    opacity: 1;
-}
-
 /* Change placeholder text on Chrome, Firefox, Opera, and Safari */
 input[type='text']::placeholder {
     opacity: 0.5;
@@ -102,8 +47,62 @@ input[type='text']::-ms-input-placeholder {
     opacity: 0.5;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    /* color: rgba(0,0,0,0.85); */
+    padding-left: 2%;
+}
+
+li:hover .deleteButton {
+    width: 30px;
+    opacity: 1;
+}
+
+
+li:nth-child(2n) {
+    background-color: rgb(220,220,220);
+}
+
+.fa-pencil-alt {
+    float: right;
+    margin-right: 5%;
+}
+
+.deleteButton {
+    height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    color: rgb(251,36,36);
+    opacity: 0;
+    width: 0;
+    display: inline-block;
+    transition: 0.1s linear;
+}
+
 .strikethrough {
     text-decoration:line-through;
     color: 	rgba(100,100,100,0.5);
 }
 
+#container {
+    width: 50%;
+    max-width: 600px;
+    margin: 5% auto;
+    /* Disable ability for user to select the text */
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   box-shadow: 0 0 3px rgba(0,0,0,0.4);
+   font-family: 'Source Sans Pro', sans-serif;
+
+}

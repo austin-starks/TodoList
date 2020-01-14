@@ -3,7 +3,7 @@ $("ul").on("click", "li", function () {
     $(this).toggleClass("strikethrough");
 })
 
-// Click on X to delete todo
+// Click on trashcan to delete todo
 $("ul").on("click", ".deleteButton", function (event) {
     // Stop the item from becoming greyed out strikethroughed
     event.stopPropagation();
@@ -29,6 +29,8 @@ $("input[type = 'text']").on("keypress", function (event) {
         $(this).val("");
         $("ul").prepend("<li><span class = 'deleteButton'><i class='fas fa-trash-alt'></i></span>" + newTodo + "</li>")
     };
+})
 
-
+$("#pencil").click(function () {
+    $("input[type='text']").fadeToggle(200);
 })
