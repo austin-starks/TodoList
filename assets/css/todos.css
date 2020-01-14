@@ -1,5 +1,10 @@
 #container {
-    background-color: grey;
+    border: 2px black solid;
     width: 50%;
     margin: 0 auto;
+}
+
+.strikethrough {
+    text-decoration:line-through;
+    color: 	rgba(100,100,100,0.5);
 }
